@@ -1,1 +1,92 @@
 @charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: gray;
+    min-height: 100%vh;
+}
+header{
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-variant: small-caps;
+}
+a{color: white;
+text-decoration: none;
+font-weight: bold;}
+
+a:hover{
+    color: blue;
+    transition-duration: 500ms;
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section.normal{
+    background-color:white;
+    color: black;
+}
+
+section.imagem{
+    background-color: gray;
+    color: white;
+}
+
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.432);
+    width: 350px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
