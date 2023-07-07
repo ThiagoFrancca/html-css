@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tabela mesclada</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif ;
+        }
+        table{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de celular</h1>
+    <table>
+        <tr>
+            <td>A</td>
+            <td colspan="2">B</td>
+        </tr>
+        <tr>
+            <td rowspan="3">D</td>
+            <td rowspan="2">E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>I</td>
+        </tr>
+        <tr>
+            
+            <td colspan="2">K</td>
+            
+        </tr>
+        
+    </table>
+    <p>Esse exemplo acima é um exemplo de Mesclagem</p>
+    <p>Que antes era assim:</p>
+    <table>
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+        <tr>
+            <td>J</td>
+            <td>K</td>
+            <td>L</td>
+        </tr>
+    </table>
+</body>
+</html>
