@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        table{border: 1px solid black;
+            background-color: aliceblue;
+            border-collapse: collapse;
+            position: relative;
+
+        }
+        caption{
+            border: 1px solid black;
+            background-color: lightslategrey;
+            border-collapse: collapse;
+            color: rgb(255, 255, 255);
+            
+        }
+        
+        thead{
+            background-color: black;
+            color: white;
+            border: 1px solid black;
+        }
+        thead > tr> th{
+            position: sticky;
+            top: -1px;
+            background-color: black;
+        }
+        tbody{
+            color: black;
+        }
+        tbody > tr:nth-child(odd){
+            background-color: lightgrey;
+        }
+        tbody > tr:nth-child(even){
+            background-color: white;
+        }
+        tfoot{
+            background-color: black;
+            color: white;
+            border: 1px solid black;
+        }
+        td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+
+        td.num{
+            padding: 10px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <table>
+        <caption>
+            <h1>População das Unidades Federativas</h1>
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Estados</th>
+                <th scope="col">Abreviação</th>
+                <th scope="col">Capital</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Acre</td>
+                <td>AC</td>
+                <td>Rio Branco</td>
+                <td class="num">795 145</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td>AL</td>
+                <td>Maceió</td>
+                <td class="num">3 327 551</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td>AP</td>
+                <td>Macapá</td>
+                <td class="num">756 500	</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td>AM</td>
+                <td>Manaus</td>
+                <td class="num">3 893 763</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td>BA</td>
+                <td>Salvador</td>
+                <td class="num">564 692,7</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>CE</td>
+                <td>Fortaleza	</td>
+                <td class="num">8 867 448</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td>DF</td>
+                <td>Brasília</td>
+                <td class="num">2 867 869</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td>ES</td>
+                <td>Vitória</td>
+                <td class="num">3 894 899</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td>GO</td>
+                <td>Goiânia</td>
+                <td class="num">6 551 322</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td>MA</td>
+                <td>São Luís</td>
+                <td class="num">6 861 924</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td>MT</td>
+                <td>Cuiabá</td>
+                <td class="num">3 236 578</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td>MS</td>
+                <td>Campo Grande</td>
+                <td class="num">2 630 098</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>MG</td>
+                <td>Belo Horizonte</td>
+                <td class="num">20 777 672</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td>PA</td>
+                <td>Belém</td>
+                <td class="num">8 101 180</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td>PB</td>
+                <td>João Pessoa</td>
+                <td class="num">3 950 359</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td>PR</td>
+                <td>Curitiba</td>
+                <td class="num">11 112 062</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td>PE</td>
+                <td>Recife</td>
+                <td class="num">9 297 861</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td>PI</td>
+                <td>Teresina</td>
+                <td class="num">3 198 185</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>RJ</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">16 497 395</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td>RN</td>
+                <td>Natal</td>
+                <td class="num">3 419 550</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td>TS</td>
+                <td>Porto Alegre</td>
+                <td class="num">11 228 091</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td>RO</td>
+                <td>Porto Velho</td>
+                <td class="num">1 755 015</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td>RR</td>
+                <td>Boa Vista</td>
+                <td class="num">500 826</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td>SC</td>
+                <td>Florianópolis</td>
+                <td class="num">6 734 568</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>SP</td>
+                <td>São Paulo</td>
+                <td class="num">44 169 350</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td>SE</td>
+                <td>Aracaju</td>
+                <td class="num">2 227 294</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td>TO</td>
+                <td>Palmas</td>
+                <td class="num">1 502 759</td>
+            </tr>
+        </tbody>
+        <Tfoot>
+            <tr>
+                <th scope="row">Total da população</th>
+                <td>214,3 milhões</td>
+            </tr>
+        </Tfoot>
+    </table>
+
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate fugit illo libero praesentium labore iure sit dolore. Inventore natus quae expedita porro numquam ipsum soluta facere labore perferendis commodi.loreLorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate fugit illo libero praesentium labore iure sit dolore. Inventore natus quae expedita porro numquam ipsum soluta facere labore perferendis commodi.loreLorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate fugit illo libero praesentium labore iure sit dolore. Inventore natus quae expedita porro numquam ipsum soluta facere labore perferendis commodi.loreLorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate fugit illo libero praesentium labore iure sit dolore. Inventore natus quae expedita porro numquam ipsum soluta facere labore perferendis commodi.loreLorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate fugit illo libero praesentium labore iure sit dolore. Inventore natus quae expedita porro numquam ipsum soluta facere labore perferendis commodi.loreLorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate fugit illo libero praesentium labore iure sit dolore. Inventore natus quae expedita porro numquam ipsum soluta facere labore perferendis commodi.lore
+    </p>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate fugit illo libero praesentium labore iure sit dolore. Inventore natus quae expedita porro numquam ipsum soluta facere labore perferendis commodi.loreLorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate fugit illo libero praesentium labore iure sit dolore. Inventore natus quae expedita porro numquam ipsum soluta facere labore perferendis commodi.loreLorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate fugit illo libero praesentium labore iure sit dolore. Inventore natus quae expedita porro numquam ipsum soluta facere labore perferendis commodi.loreLorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate fugit illo libero praesentium labore iure sit dolore. Inventore natus quae expedita porro numquam ipsum soluta facere labore perferendis commodi.loreLorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate fugit illo libero praesentium labore iure sit dolore. Inventore natus quae expedita porro numquam ipsum soluta facere labore perferendis commodi.loreLorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate fugit illo libero praesentium labore iure sit dolore. Inventore natus quae expedita porro numquam ipsum soluta facere labore perferendis commodi.lore
+    </p>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate fugit illo libero praesentium labore iure sit dolore. Inventore natus quae expedita porro numquam ipsum soluta facere labore perferendis commodi.loreLorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate fugit illo libero praesentium labore iure sit dolore. Inventore natus quae expedita porro numquam ipsum soluta facere labore perferendis commodi.loreLorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate fugit illo libero praesentium labore iure sit dolore. Inventore natus quae expedita porro numquam ipsum soluta facere labore perferendis commodi.loreLorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate fugit illo libero praesentium labore iure sit dolore. Inventore natus quae expedita porro numquam ipsum soluta facere labore perferendis commodi.loreLorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate fugit illo libero praesentium labore iure sit dolore. Inventore natus quae expedita porro numquam ipsum soluta facere labore perferendis commodi.loreLorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate fugit illo libero praesentium labore iure sit dolore. Inventore natus quae expedita porro numquam ipsum soluta facere labore perferendis commodi.lore
+    </p>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate fugit illo libero praesentium labore iure sit dolore. Inventore natus quae expedita porro numquam ipsum soluta facere labore perferendis commodi.loreLorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate fugit illo libero praesentium labore iure sit dolore. Inventore natus quae expedita porro numquam ipsum soluta facere labore perferendis commodi.loreLorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate fugit illo libero praesentium labore iure sit dolore. Inventore natus quae expedita porro numquam ipsum soluta facere labore perferendis commodi.loreLorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate fugit illo libero praesentium labore iure sit dolore. Inventore natus quae expedita porro numquam ipsum soluta facere labore perferendis commodi.loreLorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate fugit illo libero praesentium labore iure sit dolore. Inventore natus quae expedita porro numquam ipsum soluta facere labore perferendis commodi.loreLorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate fugit illo libero praesentium labore iure sit dolore. Inventore natus quae expedita porro numquam ipsum soluta facere labore perferendis commodi.lore
+    </p>
+
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate fugit illo libero praesentium labore iure sit dolore. Inventore natus quae expedita porro numquam ipsum soluta facere labore perferendis commodi.loreLorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate fugit illo libero praesentium labore iure sit dolore. Inventore natus quae expedita porro numquam ipsum soluta facere labore perferendis commodi.loreLorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate fugit illo libero praesentium labore iure sit dolore. Inventore natus quae expedita porro numquam ipsum soluta facere labore perferendis commodi.loreLorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate fugit illo libero praesentium labore iure sit dolore. Inventore natus quae expedita porro numquam ipsum soluta facere labore perferendis commodi.loreLorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate fugit illo libero praesentium labore iure sit dolore. Inventore natus quae expedita porro numquam ipsum soluta facere labore perferendis commodi.loreLorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate fugit illo libero praesentium labore iure sit dolore. Inventore natus quae expedita porro numquam ipsum soluta facere labore perferendis commodi.lore
+    </p>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate fugit illo libero praesentium labore iure sit dolore. Inventore natus quae expedita porro numquam ipsum soluta facere labore perferendis commodi.loreLorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate fugit illo libero praesentium labore iure sit dolore. Inventore natus quae expedita porro numquam ipsum soluta facere labore perferendis commodi.loreLorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate fugit illo libero praesentium labore iure sit dolore. Inventore natus quae expedita porro numquam ipsum soluta facere labore perferendis commodi.loreLorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate fugit illo libero praesentium labore iure sit dolore. Inventore natus quae expedita porro numquam ipsum soluta facere labore perferendis commodi.loreLorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate fugit illo libero praesentium labore iure sit dolore. Inventore natus quae expedita porro numquam ipsum soluta facere labore perferendis commodi.loreLorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate fugit illo libero praesentium labore iure sit dolore. Inventore natus quae expedita porro numquam ipsum soluta facere labore perferendis commodi.lore
+    </p>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate fugit illo libero praesentium labore iure sit dolore. Inventore natus quae expedita porro numquam ipsum soluta facere labore perferendis commodi.loreLorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate fugit illo libero praesentium labore iure sit dolore. Inventore natus quae expedita porro numquam ipsum soluta facere labore perferendis commodi.loreLorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate fugit illo libero praesentium labore iure sit dolore. Inventore natus quae expedita porro numquam ipsum soluta facere labore perferendis commodi.loreLorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate fugit illo libero praesentium labore iure sit dolore. Inventore natus quae expedita porro numquam ipsum soluta facere labore perferendis commodi.loreLorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate fugit illo libero praesentium labore iure sit dolore. Inventore natus quae expedita porro numquam ipsum soluta facere labore perferendis commodi.loreLorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate fugit illo libero praesentium labore iure sit dolore. Inventore natus quae expedita porro numquam ipsum soluta facere labore perferendis commodi.lore
+    </p>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate fugit illo libero praesentium labore iure sit dolore. Inventore natus quae expedita porro numquam ipsum soluta facere labore perferendis commodi.loreLorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate fugit illo libero praesentium labore iure sit dolore. Inventore natus quae expedita porro numquam ipsum soluta facere labore perferendis commodi.loreLorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate fugit illo libero praesentium labore iure sit dolore. Inventore natus quae expedita porro numquam ipsum soluta facere labore perferendis commodi.loreLorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate fugit illo libero praesentium labore iure sit dolore. Inventore natus quae expedita porro numquam ipsum soluta facere labore perferendis commodi.loreLorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate fugit illo libero praesentium labore iure sit dolore. Inventore natus quae expedita porro numquam ipsum soluta facere labore perferendis commodi.loreLorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate fugit illo libero praesentium labore iure sit dolore. Inventore natus quae expedita porro numquam ipsum soluta facere labore perferendis commodi.lore
+    </p>
+</body>
+</html>
