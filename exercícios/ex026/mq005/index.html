@@ -11,8 +11,8 @@
 <body>
     <header>
         <h1>Meu site</h1>
-        <span id="burguer" class="material-icons">menu</span>
-        <menu>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -29,8 +29,19 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, reprehenderit? Facere, cum aut, voluptatum aperiam officiis amet soluta quisquam saepe laborum odio error, adipisci vero ab atque cupiditate dicta quasi!</p>
         </article>
     </main>
-    <footer>
-
+    <footer class="fixar-rodape">
+<p>Site feito por Thiago França</p>
     </footer>
+    <script>
+        function clickMenu(){
+            
+        if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+            }
+        else {
+            itens.style.display = 'block'
+        }
+    }
+    </script>
 </body>
 </html>
