@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media query</title>
     <link rel="stylesheet" href="estilo/style.css">
+    <title>Media query</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
     rel="stylesheet">
+    <link rel="stylesheet" href="estilos/media.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu site</h1>
         <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
@@ -32,7 +33,19 @@
     <footer class="fixar-rodape">
 <p>Site feito por Thiago França</p>
     </footer>
+
+
     <script>
+
+        function mudouTamanho(){
+            if (window.innerWidth >= 768){
+                itens.style.display = 'block'}
+            else{
+                itens.style.display = 'none'
+            }
+            }
+
+
         function clickMenu(){
             
         if (itens.style.display == 'block'){
