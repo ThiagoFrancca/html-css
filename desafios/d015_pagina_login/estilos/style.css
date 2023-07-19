@@ -1,0 +1,37 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    height: 100%;
+    background-image: linear-gradient(to bottom,  rgb(97, 37, 124), rgba(43, 164, 194, 0.788));
+    background-repeat: no-repeat;
+    background-position: top bottom;
+}
+
+main{
+    background-color: white;
+    margin:auto;
+    width: 500px;
+    padding: 20px;
+    border-radius: 15px;
+    position: center center;
+    margin-top: 15%;
+}
+h1{
+    text-align: center;
+    font-size: 1.3em;
+    padding: 10px;
+}
+p{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1em;
+    padding-bottom: 10px;
+}
+
+p.login{
+    background-color: blueviolet;
+    color: white;
+    
+}

@@ -10,24 +10,29 @@
 </head>
 <body>
     <main>
-        <h1>login</h1>
-        <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações ambientes.</p>
+        <section id="login">
+            <div id="imagem">
 
-        <form action="login.php" method="get">
-    
-        <div>
-            <label for="imail" class="material-icons"> person</label>
-            <input type="email" name="mail" id="imail" placeholder="Seu e-mail">
-        </div>
+            </div>
+            <div id="formulario">
+                <h1>Login</h1>
+                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações ambientes.</p>
 
-        <div>
-            <label for="isen" class="material-icons">key</label>
-            <input type="password" name="sen" id="isen" required placeholder="Sua senha">
-        </div>
-        <p>
-            <input type="submit" value="Entrar">
-            
-        </p>
+                <form action="login.php" method="get">
+
+                <div id="login">
+                    <label for="imail" class="material-icons" > person</label>
+                    <input type="email" name="mail" id="imail" placeholder="Seu e-mail">
+                </div>
+                <div id="login">
+                    <label for="isen" class="material-icons">key</label></i>
+                    <input type="password" name="sen" id="isen" required minlength="8" placeholder="Sua senha">
+                </div>
+                <div>
+                    <input type="submit" value="Entrar">
+                </div>
+            </div>
+        </section>
     </form>
     </main>
 </body>
