@@ -12,7 +12,7 @@
     <main>
         <section id="login">
             <div id="imagem">
-
+               <!--Ponto importante, aqui vai a imagem no CSS-->
             </div>
             <div id="formulario">
                 <h1>Login</h1>
@@ -20,17 +20,20 @@
 
                 <form action="login.php" method="get">
 
-                <div id="login">
-                    <label for="imail" class="material-icons" > person</label>
+                <div id="preencher">
+                    <i class="material-icons">person</i>
+                    <label for="imail"  ></label>
                     <input type="email" name="mail" id="imail" placeholder="Seu e-mail">
                 </div>
-                <div id="login">
-                    <label for="isen" class="material-icons">key</label></i>
+                <div id="preencher">
+                    <i class="material-icons">vpn_key</i>
+                    <label for="isen"></label></i>
                     <input type="password" name="sen" id="isen" required minlength="8" placeholder="Sua senha">
                 </div>
-                <div>
+                
                     <input type="submit" value="Entrar">
-                </div>
+                    <a href="#">Esqueci a senha  <i class="material-icons">email</i></a>
+                
             </div>
         </section>
     </form>
